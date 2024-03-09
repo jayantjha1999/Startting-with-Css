@@ -1,0 +1,54 @@
+------------------HTML--------------------
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+<title>Assignment</title>
+<!-- Inline styles -->
+
+<!-- depending on the order external wins between internal and external since I have
+external imported after internal -->
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="Inline">Inline</div>
+<div class="internal">Internal</div>
+<div class="external">External</div>
+<div style="color: blueviolet;" class="inline__internal">Inline + Internal</div>
+<div class="int__external internal__ext">Internal + External</div>
+<div style="color: blueviolet;" class="inline__internal__external">Inline + Internal +
+External</div>
+</body>
+</html>
+
+--------------------CSS-------------------------
+
+
+element.style {
+    color: orange
+}
+.internal {
+color: rgb(150, 226, 150);
+}
+.inline__internal {
+color: rgb(176, 229, 53);
+}
+.internal__ext {
+color: rgb(29, 2, 2);
+}
+.inline__internal__external {
+color: aqua;
+}
+</style>
+
+style.css.external {
+    color: blue;
+    }
+    .int__external {
+    color: green;
+    }
+    .inline__internal__external {
+    color: bisque;
